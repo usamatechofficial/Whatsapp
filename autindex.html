@@ -1,0 +1,25 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WhatsApp Sender</title>
+</head>
+<body>
+  <h2>WhatsApp Auto Sender</h2>
+  <form action="/start" method="post" enctype="multipart/form-data">
+    <label>Target Numbers (comma separated):</label><br>
+    <input type="text" name="targets"><br><br>
+
+    <label>Message File (.txt):</label><br>
+    <input type="file" name="messageFile"><br><br>
+
+    <label>Hater Name:</label><br>
+    <input type="text" name="haterName"><br><br>
+
+    <label>Delay (seconds):</label><br>
+    <input type="number" name="delay"><br><br>
+
+    <input type="submit" value="Start Sending">
+  </form>
+</body>
+</html>
